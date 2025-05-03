@@ -664,7 +664,7 @@ async function main() {
             console.log(`${colors.yellow}⏳ Waiting 30 seconds before starting swaps...${colors.reset}`);
             await sleep(30000);
             await completeAllSwaps(wallets, proxies, provider);
-            await countdown(24 * 60 * 60, "next daily routine");
+            await countdown(12 * 60 * 60, "next daily routine");
           }
           break;
           
